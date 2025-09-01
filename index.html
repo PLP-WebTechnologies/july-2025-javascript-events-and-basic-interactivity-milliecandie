@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Interactive Features</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="theme-toggle" id="themeToggle">🌙 Dark Mode</button>
+
+    <header>
+        <h1>JavaScript Interactive Features</h1>
+        <p>Demonstrating event handling, interactive elements, and form validation</p>
+    </header>
+
+    <main>
+        <!-- Counter Game Section -->
+        <section id="counter-game">
+            <h2>Counter Game</h2>
+            <p>Click the buttons to change the count:</p>
+            <div class="counter-display" id="counterValue">0</div>
+            <div>
+                <button id="decrementBtn">-</button>
+                <button id="resetBtn">Reset</button>
+                <button id="incrementBtn">+</button>
+                <button id="doubleBtn">Double</button>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq-section">
+            <h2>FAQ Section</h2>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>What is JavaScript?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>JavaScript is a programming language that enables interactive web pages. It is an essential part of web applications and is supported by all modern web browsers.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>What are JavaScript events?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>JavaScript events are actions that occur on web pages, such as clicks, mouse movements, keyboard input, and form submissions. Developers can write code to respond to these events.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>What is DOM manipulation?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>DOM manipulation refers to using JavaScript to modify the Document Object Model (DOM) of a web page, allowing developers to dynamically change content, styles, and structure without reloading the page.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tabbed Interface -->
+        <section id="tabbed-interface">
+            <h2>Tabbed Interface</h2>
+            <div class="tab-container">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="tab1">Tab 1</button>
+                    <button class="tab-btn" data-tab="tab2">Tab 2</button>
+                    <button class="tab-btn" data-tab="tab3">Tab 3</button>
+                </div>
+                <div class="tab-content active" id="tab1">
+                    <h3>Content for Tab 1</h3>
+                    <p>This is the content for the first tab. You can put any information here.</p>
+                </div>
+                <div class="tab-content" id="tab2">
+                    <h3>Content for Tab 2</h3>
+                    <p>This is the content for the second tab. Each tab can have different content.</p>
+                </div>
+                <div class="tab-content" id="tab3">
+                    <h3>Content for Tab 3</h3>
+                    <p>This is the content for the third tab. Tabs are a great way to organize content.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Validation -->
+        <section id="form-section">
+            <h2>Form Validation</h2>
+            <form id="validationForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                    <div class="error" id="nameError">Please enter a valid name (at least 2 characters)</div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <div class="error" id="emailError">Please enter a valid email address</div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
+                    <div class="error" id="passwordError">Password must be at least 8 characters with one number and one special character</div>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword">
+                    <div class="error" id="confirmPasswordError">Passwords do not match</div>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            <div class="success-message" id="successMessage">
+                Form submitted successfully!
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
